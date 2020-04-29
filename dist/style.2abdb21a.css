@@ -1,0 +1,185 @@
+/*css reset*/
+*{box-sizing: border-box;}
+*:before, *:after{box-sizing: border-box;} /*所有伪元素*/
+*{margin:0; padding:0}
+ul{
+    list-style: none; 
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+img{
+    max-width:100%;
+    max-height: 100%;
+}
+
+body{
+    background: #eee;
+    /* all clientpage goes red */
+}
+.globalMain{
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+.globalHeader{
+    margin: 30px 24px;
+}
+
+@media (min-width:500px){
+    /* 500px以下就不管 */
+    .globalHeader{
+      margin: 70px 0 100px;
+    }
+}
+
+.searchForm{
+    display: flex;
+    border-radius: 4x;
+    justify-content: space-between;
+    max-width: 400px;
+}
+@media (min-width:500px){
+    /* 500px以下就不管 只设定pc端 */
+    .searchForm{
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+}
+
+
+
+.searchForm > input{
+    width: 100%;
+    margin-right: 10px;
+    height: 40px;
+    padding: 0 10px;
+    border: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.searchForm > button{
+    white-space: nowrap;
+    padding: 0 25px;
+
+    border: none;
+    border-radius: 5px;
+    background: rgb(15, 147, 204);
+    color: white;
+    font-size: 16px;
+}
+
+.siteList{
+    display: flex;
+    flex-wrap: wrap;
+    /* 要换行 用wrap */
+    /*border: 1px solid black;*/
+    margin: 24px;
+    justify-content: space-between;
+   
+}
+
+@media (min-width: 500px){
+    .siteList{
+    margin-left: 0;
+    margin-right: -25px;
+    justify-content: flex-start;
+    }
+}
+
+.siteList > li{  
+    margin-bottom: 12px;
+}
+
+@media (min-width: 500px){
+    .siteList > li{  
+        margin-right: 25px; 
+            /*pc端还是要设置margin  */
+    }
+}
+
+.siteList .site{
+    position: relative;
+    height: 118px; 
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 15px 0;
+    cursor:pointer;
+}
+
+.siteList .site > .logo{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgba(37, 37, 37, 0.925);
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 64px;
+    text-transform: uppercase;
+}
+
+.siteList .site > .link{
+    margin-top: 4px;
+    font-size: 14px;
+    
+}
+.siteList .site > .delete{
+    position: absolute;
+    right: 8px;
+    top: 5px;
+    display:none;
+    cursor: default;
+}
+.siteList .site:hover> .delete{
+    position: absolute;
+    right: 8px;
+    top: 5px;
+    display: block;
+    
+}
+
+
+
+.siteList .addSite{
+    width: 160px;
+    height: 118px; 
+    border: #ddd 1px solid;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: white;
+    /* padding:20px 0; */
+}
+
+.siteList .addSite .icon{
+    width: 56px;
+    height: 56px;
+     
+}
+.siteList .addSite .text{
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.siteList .addSite .iconWrapper{
+   
+    width: 64px;
+    height: 64px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+     
+}
+
+/*# sourceMappingURL=/style.2abdb21a.css.map */
