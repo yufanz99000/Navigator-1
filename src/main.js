@@ -75,6 +75,7 @@ window.onbeforeunload = () => {
     localStorage.setItem('x', string); //把hashmap设置为string赋值给x
 }
 
+/*取消鼠标事件
 $(document).on('keypress', (e) => {
     const key = e.key;
     for (let i = 0; i < hashMap.length; i++) {
@@ -83,7 +84,7 @@ $(document).on('keypress', (e) => {
         };
     };
 })
-
+*/
 /*
 <li>
 <a href="https://www.bilibili.com/">
